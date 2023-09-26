@@ -1,0 +1,84 @@
+
+================================================================================
+EXCEPTION_ACCESS_VIOLATION:
+The thread tried to read from or write to a virtual
+address for which it does not have the appropriate access.
+Access address 0x00000020 was read from.
+
+Exception occured at
+00b775cc Worldbuilder.exe+0x7775cc, FXParticleSystem::CategoryModuleClassBase<8,0>::CategoryModuleClassBase<8,0>+0x5455c.
+
+Version: internal
+
+EAX:0x00000020 EBX:0x0019e570 ECX:0x00000020
+EDX:0x0026c000 ESI:0x0000041d EDI:0x0019e55c
+EIP:0x00b775cc ESP:0x0019e19c EBP:0x0019e1c4
+Flags:%00000000000000010000001000010110
+CS:0x0023 DS:0x002b SS:0x002b
+ES:0x002b FS:0x0053 GS:0x002b
+
+CW:%0000000001111111
+SW:%0000000000000000
+TW:%1111111111111111
+ErrOfs:      0x00000000 ErrSel:  0x00000000
+DataOfs:     0x00000000 DataSel: 0x00000000
+Cr0NpxState: 0x00000000
+ST(0) 00000000001497cd1040 210524.312500
+ST(1) 0000000000000080ff3f 1.000000
+ST(2) 00000000000000000000 0.000000
+ST(3) 00000000002071f7fe3f 0.966570
+ST(4) 00000000005c379e07c0 -316.432495
+ST(5) 00000000000093b703c0 -22.946777
+ST(6) 0000000000000080fb3f 0.062500
+ST(7) 0000000000000080fb3f 0.062500
+
+42 addresses:
+(unknown)(0): Worldbuilder.exe+7828940 FXParticleSystem::CategoryModuleClassBase<8,0>::CategoryModuleClassBase<8,0>+345436
+(unknown)(0): Worldbuilder.exe+7812973 FXParticleSystem::CategoryModuleClassBase<8,0>::CategoryModuleClassBase<8,0>+329469
+(unknown)(0): Worldbuilder.exe+7817613 FXParticleSystem::CategoryModuleClassBase<8,0>::CategoryModuleClassBase<8,0>+334109
+(unknown)(0): Worldbuilder.exe+2942133 IRegion2D::operator=+2890082
+(unknown)(0): Worldbuilder.exe+2956462 StringBase<char>::find+12494
+(unknown)(0): Worldbuilder.exe+7812712 FXParticleSystem::CategoryModuleClassBase<8,0>::CategoryModuleClassBase<8,0>+329208
+(unknown)(0): Worldbuilder.exe+1954689 IRegion2D::operator=+1902638
+(unknown)(0): Worldbuilder.exe+1978450 IRegion2D::operator=+1926399
+(unknown)(0): Worldbuilder.exe+971982 IRegion2D::operator=+919931
+(unknown)(0): Worldbuilder.exe+974078 IRegion2D::operator=+922027
+(unknown)(0): MFC71.DLL+90439 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+205843 Ordinal2713+1715
+(unknown)(0): USER32.dll+143830 CallWindowProcW+1814
+(unknown)(0): USER32.dll+140786 MsgWaitForMultipleObjectsEx+2258
+(unknown)(0): USER32.dll+232216 SetWindowsHookExAW+408
+(unknown)(0): USER32.dll+138422 SendMessageW+70
+(unknown)(0): COMCTL32.dll+130236 Ordinal342+2412
+(unknown)(0): COMCTL32.dll+302656 TrackMouseEvent+160112
+(unknown)(0): COMCTL32.dll+305151 TrackMouseEvent+162607
+(unknown)(0): COMCTL32.dll+309919 TrackMouseEvent+167375
+(unknown)(0): COMCTL32.dll+315172 TrackMouseEvent+172628
+(unknown)(0): USER32.dll+205843 Ordinal2713+1715
+(unknown)(0): USER32.dll+143830 CallWindowProcW+1814
+(unknown)(0): USER32.dll+310790 SetMenu+326
+(unknown)(0): USER32.dll+313579 CallWindowProcA+27
+(unknown)(0): MFC71.DLL+195803 (unknown)
+(unknown)(0): MFC71.DLL+188615 (unknown)
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+205843 Ordinal2713+1715
+(unknown)(0): USER32.dll+143830 CallWindowProcW+1814
+(unknown)(0): USER32.dll+137877 DispatchMessageW+1221
+(unknown)(0): USER32.dll+146228 IsDialogMessageW+2132
+(unknown)(0): USER32.dll+363452 IsDialogMessageA+316
+(unknown)(0): MFC71.DLL+81505 (unknown)
+(unknown)(0): MFC71.DLL+168246 (unknown)
+(unknown)(0): MFC71.DLL+168254 (unknown)
+
+Bytes around EIP:
+00b775ac fc 8b e5 5d c2 04 00 cc cc cc cc cc cc cc cc cc ü‹å]Â..ÌÌÌÌÌÌÌÌÌ
+00b775bc cc cc cc cc 55 8b ec 83 ec 28 89 4d d8 8b 45 d8 ÌÌÌÌU‹ìƒì(‰MØ‹EØ
+00b775cc 8b 08 89 4d fc 8b 55 d8 8b 02 8b 48 04 89 4d f8 ‹.‰Mü‹UØ‹.‹H.‰Mø
+00b775dc 83 7d f8 00 74 39 8b 55 08 52 8b 4d f8 83 c1 10 ƒ}ø.t9‹U.R‹MøƒÁ.
+00b775ec e8 23 cc 88 ff 33 c9 85 c0 0f 9c c1 0f b6 d1 85 è#Ìˆÿ3É…À.œÁ.¶Ñ…
